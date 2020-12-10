@@ -11,6 +11,9 @@ app.use(morgan('dev'))
 app.use(express.json());
 app.use(express.urlencoded({ extended: false}));
 
+app.get('/', function(req, res){
+    res.send('<h1>Bienvenido a mi servidor rest (localhost)</h1>');
+})
 app.use("/libro", require('./routes/libros.routes'))
 
 module.exports = app;
