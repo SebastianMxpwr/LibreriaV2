@@ -1,0 +1,23 @@
+###
+POST http://localhost:4000/api/libros
+Content-Type: application/json
+
+{
+    "nombre":"libro1",
+    "genero":"drama",
+    "autor":"jose",
+    "bloque":"2"
+}
+###
+GET http://localhost:4000/api/libros
+###
+GET http://localhost:4000/api/libros/5fd07424e4439407489eec44
+###
+DELETE http://localhost:4000/api/libros/5fd07424e4439407489eec44
+###
+PUT http://localhost:4000/api/libros/5fd07424e4439407489eec44
+Content-Type: application/json
+
+{
+    "genero": "accion"
+}
